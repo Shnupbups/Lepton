@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/thatch_slab" },
+        "type=top": { "model": "lepton:block/thatch_slab_top" },
+        "type=double": { "model": "lepton:block/thatch" }
+    }
+}

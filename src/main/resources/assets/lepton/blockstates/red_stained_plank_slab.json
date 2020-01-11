@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/red_stained_plank_slab" },
+        "type=top": { "model": "lepton:block/red_stained_plank_slab_top" },
+        "type=double": { "model": "lepton:block/red_stained_planks" }
+    }
+}

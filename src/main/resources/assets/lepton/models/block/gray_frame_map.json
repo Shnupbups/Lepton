@@ -1,0 +1,6 @@
+{
+  "parent": "block/item_frame_map",
+  "textures": {
+    "back": "lepton:block/gray_frame_base"
+  }
+}

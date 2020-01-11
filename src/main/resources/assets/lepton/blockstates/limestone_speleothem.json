@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "size=small": { "model": "lepton:block/limestone_speleothem_small" },
+        "size=medium": { "model": "lepton:block/limestone_speleothem_medium" },
+        "size=big": { "model": "lepton:block/limestone_speleothem_big" }
+    }
+}

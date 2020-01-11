@@ -1,0 +1,8 @@
+{
+  "parent": "block/daylight_detector",
+  "textures": {
+    "particle": "lepton:block/weather_sensor_top_inverted",
+    "top": "lepton:block/weather_sensor_top_inverted",
+    "side": "lepton:block/weather_sensor_side"
+  }
+}

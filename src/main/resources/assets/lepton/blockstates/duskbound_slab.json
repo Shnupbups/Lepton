@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/duskbound_slab" },
+        "type=top": { "model": "lepton:block/duskbound_slab_top" },
+        "type=double": { "model": "lepton:block/duskbound_block" }
+    }
+}

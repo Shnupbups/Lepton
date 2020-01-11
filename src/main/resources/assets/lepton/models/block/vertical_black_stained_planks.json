@@ -1,0 +1,6 @@
+{   
+    "parent": "lepton:block/vertical_planks",
+    "textures": {
+        "all": "lepton:block/black_stained_planks"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "lepton:block/cobbedstone",
+        "top": "lepton:block/cobbedstone",
+        "side": "lepton:block/cobbedstone"
+    }
+}

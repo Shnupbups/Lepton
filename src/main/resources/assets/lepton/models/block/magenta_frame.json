@@ -1,0 +1,6 @@
+{
+  "parent": "block/item_frame",
+  "textures": {
+    "back": "lepton:block/magenta_frame_base"
+  }
+}

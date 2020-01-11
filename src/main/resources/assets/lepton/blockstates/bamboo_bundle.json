@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "lepton:block/bamboo_bundle" },
+        "axis=z":   { "model": "lepton:block/bamboo_bundle", "x": 90 },
+        "axis=x":   { "model": "lepton:block/bamboo_bundle", "x": 90, "y": 90 }
+    }
+}

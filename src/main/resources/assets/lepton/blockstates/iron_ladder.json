@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "lepton:block/iron_ladder" },
+        "facing=east":  { "model": "lepton:block/iron_ladder", "y": 90 },
+        "facing=south": { "model": "lepton:block/iron_ladder", "y": 180 },
+        "facing=west":  { "model": "lepton:block/iron_ladder", "y": 270 }
+    }
+}

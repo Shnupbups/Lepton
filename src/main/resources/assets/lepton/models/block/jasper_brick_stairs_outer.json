@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "lepton:block/jasper_bricks",
+        "top": "lepton:block/jasper_bricks",
+        "side": "lepton:block/jasper_bricks"
+    }
+}

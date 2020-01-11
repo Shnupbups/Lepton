@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "type=top":  { "model": "lepton:block/chain_top" },
+        "type=middle":  { "model": "lepton:block/chain_middle" },
+        "type=bottom": [
+            { "model": "lepton:block/chain_bottom_1" },
+            { "model": "lepton:block/chain_bottom_2" },
+            { "model": "lepton:block/chain_bottom_3" }
+        ]
+    }
+}

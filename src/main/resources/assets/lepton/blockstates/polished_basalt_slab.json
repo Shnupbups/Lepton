@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/polished_basalt_slab" },
+        "type=top": { "model": "lepton:block/polished_basalt_slab_top" },
+        "type=double": { "model": "lepton:block/polished_basalt" }
+    }
+}

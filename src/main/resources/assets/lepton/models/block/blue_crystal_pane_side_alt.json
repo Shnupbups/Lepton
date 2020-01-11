@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_glass_pane_side_alt",
+    "textures": {
+        "edge": "lepton:block/blue_crystal",
+        "pane": "lepton:block/blue_crystal"
+    }
+}

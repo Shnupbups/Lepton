@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"watched=false": { "model": "lepton:block/ender_watcher" },
+		"watched=true": { "model": "lepton:block/ender_watcher_on" }
+	}
+}

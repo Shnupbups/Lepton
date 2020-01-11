@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "lepton:block/blue_blossom_leaves"
+    }
+}

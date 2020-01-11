@@ -1,0 +1,6 @@
+{
+  "parent": "lepton:block/candle",
+  "textures": {
+    "candle": "lepton:block/red_candle"
+  }
+}

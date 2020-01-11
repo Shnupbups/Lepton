@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "lepton:block/polished_jasper",
+        "top": "lepton:block/polished_jasper",
+        "side": "lepton:block/polished_jasper"
+    }
+}

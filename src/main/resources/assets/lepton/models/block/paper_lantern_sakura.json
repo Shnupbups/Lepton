@@ -1,0 +1,7 @@
+{
+	"parent": "lepton:block/paper_lantern",
+	"textures": {
+		"particle": "lepton:block/paper_lantern_side_sakura",
+		"side": "lepton:block/paper_lantern_side_sakura"
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/diorite_brick_slab" },
+        "type=top": { "model": "lepton:block/diorite_brick_slab_top" },
+        "type=double": { "model": "lepton:block/diorite_bricks" }
+    }
+}

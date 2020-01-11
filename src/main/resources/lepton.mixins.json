@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.shnupbups.lepton.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"EntityContextImplMixin"
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

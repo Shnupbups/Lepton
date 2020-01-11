@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "lepton:block/cocoa_bean_sack_top",
+        "bottom": "lepton:block/cocoa_bean_sack_bottom",
+        "side": "lepton:block/cocoa_bean_sack"
+    }
+}

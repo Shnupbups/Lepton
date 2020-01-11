@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "lepton:block/obsidian_pressure_plate" },
+    "powered=true": { "model": "lepton:block/obsidian_pressure_plate_down" }
+  }
+}

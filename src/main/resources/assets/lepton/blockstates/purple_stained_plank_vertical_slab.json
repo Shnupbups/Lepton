@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "type=north": { "model": "lepton:block/purple_stained_plank_vertical_slab", "y": 0, "uvlock": true },
+        "type=south": { "model": "lepton:block/purple_stained_plank_vertical_slab", "y": 180, "uvlock": true },
+        "type=east": { "model": "lepton:block/purple_stained_plank_vertical_slab", "y": 90, "uvlock": true },
+        "type=west": { "model": "lepton:block/purple_stained_plank_vertical_slab", "y": 270, "uvlock": true },
+        "type=double": { "model": "lepton:block/purple_stained_planks" }
+    }
+}

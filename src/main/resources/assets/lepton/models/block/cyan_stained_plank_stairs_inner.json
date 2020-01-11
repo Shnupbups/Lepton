@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "lepton:block/cyan_stained_planks",
+        "top": "lepton:block/cyan_stained_planks",
+        "side": "lepton:block/cyan_stained_planks"
+    }
+}

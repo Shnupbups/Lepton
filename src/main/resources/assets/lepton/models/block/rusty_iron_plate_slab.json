@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "lepton:block/rusty_iron_plate",
+        "top": "lepton:block/rusty_iron_plate",
+        "side": "lepton:block/rusty_iron_plate"
+    }
+}

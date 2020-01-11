@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "lepton:block/diorite_pillar_top",
+        "side": "lepton:block/diorite_pillar"
+    }
+}

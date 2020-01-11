@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "lepton:block/polished_slate",
+        "top": "lepton:block/polished_slate",
+        "side": "lepton:block/polished_slate"
+    }
+}

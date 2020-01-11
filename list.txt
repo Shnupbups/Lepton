@@ -1,0 +1,98 @@
+Automation Module
+- Chute
+- Color Slime
+- Dispensers Play Records
+- Dispensers Place Blocks
+- Ender Watcher
+- Endermites Form Shulkers
+- Feeding Trough
+- Gravisand
+- Iron Rod
+- Metal Buttons
+- New Redstone Circuits
+- Obsidian Pressure Plate
+- Weather Sensor
+
+Building Module
+- Carved Wood
+- Colored Flower Pots
+- Compressed Blocks
+- Duskbound Blocks
+- Framed Glass
+- Iron Grate
+- Iron Plates
+- Item Frame Variants
+- Leaf Carpet
+- Lit Lamp
+- Midori
+- More Brick Types
+- More Potted Plants
+- More Stone Variants
+- Nether Brick Fence Gate
+- Netherwrought Stone
+- Paper Decor
+- Quilted Wool
+- Rope
+- Shingles
+- Soul Sandstone
+- Stained Planks
+- Stone Pavement
+- Sturdy Stone
+- Tallow And Candles
+- Thatch
+- Turf
+- Variant Bookshelves
+- Variant Chests
+- Variant Ladders
+- Vertical Planks
+- Vertical Slabs
+- Wood Walls
+
+Tools Module
+- Extra Arrows
+- Slime Bucket
+- Trowel
+
+Tweaks Module
+- Armed Armor Stands
+- Automatic Recipe Unlock
+- Axe Leaf Harvesting
+- Blastproof Shulker Boxes
+- Burning Baby Zombies
+- Burning Torches
+- Chicken Shearing
+- Dirt To Path
+- Dragon Scales
+- Glass Shards
+- Ladder Drop Down
+- Minecart Block Placement
+- Pat The Dogs
+- Parrot Eggs
+- Place Glowstone And Gunpowder
+- Poison Potato Usage
+- Shave Snow Layers
+- Sign Editing
+- Simple Harvest
+- Sponges Dry in the Nether
+- Utility Recipes
+- Villagers Follow Emeralds
+
+World Module
+- Big Stone Clusters
+- Biotite
+- Blosson Trees
+- Brimstone
+- Cave Roots
+- Crystals
+- Depth Mobs
+- Elder Prismarine
+- Foxhounds
+- Glowshrooms And Glowcelium
+- Monster Boxes
+- Nether Fossils
+- Nether Obsidian Spikes
+- New Stone Types
+- Passive Creatures
+- Permafrost
+- Speleothems
+- Underground Clay

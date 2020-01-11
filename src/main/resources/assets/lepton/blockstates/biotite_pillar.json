@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "lepton:block/biotite_pillar" },
+        "axis=z":   { "model": "lepton:block/biotite_pillar", "x": 90 },
+        "axis=x":   { "model": "lepton:block/biotite_pillar", "x": 90, "y": 90 }
+    }
+}

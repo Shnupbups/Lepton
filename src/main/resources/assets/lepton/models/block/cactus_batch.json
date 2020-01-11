@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "lepton:block/cactus_batch_top",
+        "side": "lepton:block/cactus_batch"
+    }
+}

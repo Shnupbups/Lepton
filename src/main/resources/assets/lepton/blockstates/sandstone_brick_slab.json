@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/sandstone_brick_slab" },
+        "type=top": { "model": "lepton:block/sandstone_brick_slab_top" },
+        "type=double": { "model": "lepton:block/sandstone_bricks" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "lepton:block/vertical_slab",
+    "textures": {
+        "bottom": "lepton:block/granite_bricks",
+        "top": "lepton:block/granite_bricks",
+        "side": "lepton:block/granite_bricks"
+    }
+}

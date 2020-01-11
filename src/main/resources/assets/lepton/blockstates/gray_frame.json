@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "map=false": { "model": "lepton:block/gray_frame" },
+    "map=true":  { "model": "lepton:block/gray_frame_map" }
+  }
+}

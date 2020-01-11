@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "lepton:block/diorite_bricks",
+        "top": "lepton:block/diorite_bricks",
+        "side": "lepton:block/diorite_bricks"
+    }
+}

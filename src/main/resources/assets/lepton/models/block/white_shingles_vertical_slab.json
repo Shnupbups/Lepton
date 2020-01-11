@@ -1,0 +1,8 @@
+{
+    "parent": "lepton:block/vertical_slab",
+    "textures": {
+        "bottom": "lepton:block/white_shingles",
+        "top": "lepton:block/white_shingles",
+        "side": "lepton:block/white_shingles"
+    }
+}

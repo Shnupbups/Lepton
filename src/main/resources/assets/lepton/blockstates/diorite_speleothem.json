@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "size=small": { "model": "lepton:block/diorite_speleothem_small" },
+        "size=medium": { "model": "lepton:block/diorite_speleothem_medium" },
+        "size=big": { "model": "lepton:block/diorite_speleothem_big" }
+    }
+}

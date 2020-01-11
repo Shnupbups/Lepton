@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "lepton:block/biotite_pillar_top",
+        "side": "lepton:block/biotite_pillar"
+    }
+}

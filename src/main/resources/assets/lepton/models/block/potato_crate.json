@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "lepton:block/potato_crate_top",
+        "bottom": "lepton:block/potato_crate_bottom",
+        "side": "lepton:block/potato_crate"
+    }
+}

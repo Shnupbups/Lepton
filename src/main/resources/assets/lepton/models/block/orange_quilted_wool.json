@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "lepton:block/orange_quilted_wool"
+	}
+}

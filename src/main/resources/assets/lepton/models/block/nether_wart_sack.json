@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "lepton:block/nether_wart_sack_top",
+        "bottom": "lepton:block/nether_wart_sack_bottom",
+        "side": "lepton:block/nether_wart_sack"
+    }
+}

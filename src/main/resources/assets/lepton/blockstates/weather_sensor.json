@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "inverted=false": { "model": "lepton:block/weather_sensor" },
+    "inverted=true": { "model": "lepton:block/weather_sensor_inverted" }
+  }
+}

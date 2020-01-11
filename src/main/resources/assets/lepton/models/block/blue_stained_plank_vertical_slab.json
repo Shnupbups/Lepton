@@ -1,0 +1,8 @@
+{
+    "parent": "lepton:block/vertical_slab",
+    "textures": {
+        "bottom": "lepton:block/blue_stained_planks",
+        "top": "lepton:block/blue_stained_planks",
+        "side": "lepton:block/blue_stained_planks"
+    }
+}

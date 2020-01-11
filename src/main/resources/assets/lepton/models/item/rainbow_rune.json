@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lepton:item/rainbow_rune",
+        "layer1": "lepton:item/rainbow_rune_overlay"
+    }
+}

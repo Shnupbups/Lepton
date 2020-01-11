@@ -1,0 +1,6 @@
+{
+  "parent": "lepton:block/speleothem_small",
+  "textures": {
+    "block": "lepton:block/marble"
+  }
+}

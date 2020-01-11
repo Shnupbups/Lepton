@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "lepton:block/permafrost",
+        "top": "lepton:block/permafrost",
+        "side": "lepton:block/permafrost"
+    }
+}

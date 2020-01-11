@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/soul_sandstone_slab" },
+        "type=top": { "model": "lepton:block/soul_sandstone_slab_top" },
+        "type=double": { "model": "lepton:block/soul_sandstone" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "size=small": { "model": "lepton:block/netherrack_speleothem_small" },
+        "size=medium": { "model": "lepton:block/netherrack_speleothem_medium" },
+        "size=big": { "model": "lepton:block/netherrack_speleothem_big" }
+    }
+}

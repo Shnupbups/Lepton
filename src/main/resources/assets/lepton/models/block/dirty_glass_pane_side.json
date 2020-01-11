@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_glass_pane_side",
+    "textures": {
+        "edge": "lepton:block/dirty_glass_pane_top",
+        "pane": "lepton:block/dirty_glass"
+    }
+}

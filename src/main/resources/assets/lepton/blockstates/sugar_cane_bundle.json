@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "lepton:block/sugar_cane_bundle" },
+        "axis=z":   { "model": "lepton:block/sugar_cane_bundle", "x": 90 },
+        "axis=x":   { "model": "lepton:block/sugar_cane_bundle", "x": 90, "y": 90 }
+    }
+}

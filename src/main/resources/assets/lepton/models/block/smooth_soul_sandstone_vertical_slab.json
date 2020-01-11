@@ -1,0 +1,8 @@
+{
+    "parent": "lepton:block/vertical_slab",
+    "textures": {
+        "bottom": "lepton:block/soul_sandstone_top",
+        "top": "lepton:block/soul_sandstone_top",
+        "side": "lepton:block/soul_sandstone_top"
+    }
+}

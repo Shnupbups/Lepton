@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "lepton",
+  "version": "1.0.0",
+
+  "name": "Lepton",
+  "description": "An unofficial Fabric port of Quark by Vazkii",
+  "authors": [
+    "Shnupbups"
+  ],
+
+  "license": "CC BY-NC-SA 3.0",
+  "icon": "assets/lepton/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.shnupbups.lepton.Lepton"
+    ],
+    "client": [
+      "com.shnupbups.lepton.LeptonClient"
+    ]
+  },
+  "mixins": [
+    "lepton.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.6.1",
+    "fabric": "*"
+  }
+}

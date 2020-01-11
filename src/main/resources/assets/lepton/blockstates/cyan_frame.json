@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "map=false": { "model": "lepton:block/cyan_frame" },
+    "map=true":  { "model": "lepton:block/cyan_frame_map" }
+  }
+}

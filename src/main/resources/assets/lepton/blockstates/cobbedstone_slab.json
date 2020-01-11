@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/cobbedstone_slab" },
+        "type=top": { "model": "lepton:block/cobbedstone_slab_top" },
+        "type=double": { "model": "lepton:block/cobbedstone" }
+    }
+}

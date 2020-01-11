@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "lepton:block/sugar_cane_bundle_top",
+        "side": "lepton:block/sugar_cane_bundle"
+    }
+}

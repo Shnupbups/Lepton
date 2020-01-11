@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "map=false": { "model": "lepton:block/purple_frame" },
+    "map=true":  { "model": "lepton:block/purple_frame_map" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "lepton:block/speleothem_big",
+  "textures": {
+    "block": "lepton:block/slate"
+  }
+}

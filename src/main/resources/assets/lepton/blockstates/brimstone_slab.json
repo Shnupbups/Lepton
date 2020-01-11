@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/brimstone_slab" },
+        "type=top": { "model": "lepton:block/brimstone_slab_top" },
+        "type=double": { "model": "lepton:block/brimstone" }
+    }
+}

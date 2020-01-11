@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "lepton:block/cyan_shingles",
+        "top": "lepton:block/cyan_shingles",
+        "side": "lepton:block/cyan_shingles"
+    }
+}

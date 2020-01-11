@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "lepton:block/orange_blossom_sapling"
+    }
+}

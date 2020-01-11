@@ -1,0 +1,6 @@
+{   
+    "parent": "lepton:block/leaf_carpet",
+    "textures": {
+        "all": "lepton:block/orange_blossom_leaves"
+    }
+}
