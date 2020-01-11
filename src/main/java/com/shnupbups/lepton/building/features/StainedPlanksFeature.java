@@ -9,7 +9,7 @@ import net.minecraft.util.DyeColor;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class StainedPlanksFeature extends BuildingFeature {
 	public static final StainedPlanksFeature INSTANCE = new StainedPlanksFeature();

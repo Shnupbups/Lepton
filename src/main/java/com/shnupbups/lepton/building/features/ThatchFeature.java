@@ -9,7 +9,7 @@ import net.minecraft.block.SlabBlock;
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
 import com.shnupbups.lepton.building.block.ThatchBlock;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class ThatchFeature extends BuildingFeature {
 	public static final ThatchFeature INSTANCE = new ThatchFeature();

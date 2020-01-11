@@ -12,7 +12,7 @@ import net.minecraft.item.ItemGroup;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class MidoriFeature extends BuildingFeature {
 	public static final MidoriFeature INSTANCE = new MidoriFeature();

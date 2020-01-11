@@ -11,7 +11,7 @@ import net.minecraft.block.WallBlock;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class MoreStoneVariantsFeature extends BuildingFeature {
 	public static final MoreStoneVariantsFeature INSTANCE = new MoreStoneVariantsFeature();

@@ -8,7 +8,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class MagmaBrickStairsBlock extends LeptonStairsBlock {
 	

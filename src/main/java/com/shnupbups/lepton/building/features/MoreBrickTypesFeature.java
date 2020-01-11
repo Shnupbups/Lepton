@@ -14,7 +14,7 @@ import com.shnupbups.lepton.building.block.MagmaBrickBlock;
 import com.shnupbups.lepton.building.block.MagmaBrickSlabBlock;
 import com.shnupbups.lepton.building.block.MagmaBrickStairsBlock;
 import com.shnupbups.lepton.building.block.MagmaBrickWallBlock;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class MoreBrickTypesFeature extends BuildingFeature {
 	public static final MoreBrickTypesFeature INSTANCE = new MoreBrickTypesFeature();

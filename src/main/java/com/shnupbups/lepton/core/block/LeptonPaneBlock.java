@@ -1,4 +1,4 @@
-package com.shnupbups.lepton.core;
+package com.shnupbups.lepton.core.block;
 
 import net.minecraft.block.PaneBlock;
 

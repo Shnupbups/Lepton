@@ -8,7 +8,7 @@ import net.minecraft.block.GlassBlock;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
-import com.shnupbups.lepton.core.LeptonPaneBlock;
+import com.shnupbups.lepton.core.block.LeptonPaneBlock;
 
 public class FramedGlassFeature extends BuildingFeature {
 	public static final FramedGlassFeature INSTANCE = new FramedGlassFeature();

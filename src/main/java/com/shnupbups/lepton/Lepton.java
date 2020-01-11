@@ -9,6 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import com.shnupbups.lepton.automation.AutomationModule;
 import com.shnupbups.lepton.building.BuildingModule;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,10 +20,12 @@ public class Lepton implements ModInitializer {
 	
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 	
+	public static final AutomationModule AUTOMATION = AutomationModule.INSTANCE;
 	public static final BuildingModule BUILDING = BuildingModule.INSTANCE;
 	
 	@Override
 	public void onInitialize() {
+		AUTOMATION.init();
 		BUILDING.init();
 	}
 	

@@ -8,7 +8,7 @@ import net.minecraft.block.SlabBlock;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.building.BuildingFeature;
-import com.shnupbups.lepton.core.LeptonStairsBlock;
+import com.shnupbups.lepton.core.block.LeptonStairsBlock;
 
 public class TurfFeature extends BuildingFeature {
 	public static final TurfFeature INSTANCE = new TurfFeature();
