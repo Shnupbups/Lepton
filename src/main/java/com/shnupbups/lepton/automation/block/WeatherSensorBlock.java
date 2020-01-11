@@ -73,12 +73,13 @@ public class WeatherSensorBlock extends Block implements BlockEntityProvider {
 		if (world.dimension.hasSkyLight()) {
 			boolean inverted = state.get(INVERTED);
 			
-			if (world.isThundering())
+			if (world.isThundering()) {
 				world.setBlockState(pos, state.with(POWER, inverted ? 0 : 2));
-			else if (world.isRaining() && world.getBiome(pos).getPrecipitation() != Biome.Precipitation.NONE)
+			} else if (world.isRaining() && world.getBiome(pos).getPrecipitation() != Biome.Precipitation.NONE) {
 				world.setBlockState(pos, state.with(POWER, 1));
-			else
+			} else {
 				world.setBlockState(pos, state.with(POWER, inverted ? 2 : 0));
+			}
 		}
 	}
 	

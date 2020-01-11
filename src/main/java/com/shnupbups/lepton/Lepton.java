@@ -11,6 +11,7 @@ import net.minecraft.util.registry.Registry;
 
 import com.shnupbups.lepton.automation.AutomationModule;
 import com.shnupbups.lepton.building.BuildingModule;
+import com.shnupbups.lepton.world.WorldModule;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,11 +23,13 @@ public class Lepton implements ModInitializer {
 	
 	public static final AutomationModule AUTOMATION = AutomationModule.INSTANCE;
 	public static final BuildingModule BUILDING = BuildingModule.INSTANCE;
+	public static final WorldModule WORLD = WorldModule.INSTANCE;
 	
 	@Override
 	public void onInitialize() {
 		AUTOMATION.init();
 		BUILDING.init();
+		WORLD.init();
 	}
 	
 	public static Identifier id(String id) {
