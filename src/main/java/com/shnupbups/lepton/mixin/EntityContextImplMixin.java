@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityContextImpl;
 
-import com.shnupbups.lepton.core.EntityGetter;
+import com.shnupbups.lepton.helper.EntityGetter;
 
 import java.util.Optional;
 
@@ -16,7 +16,7 @@ import java.util.Optional;
 public class EntityContextImplMixin implements EntityGetter {
 	private Entity entity = null;
 	
-	@Inject(method= "<init>(Lnet/minecraft/entity/Entity;)V", at = @At("TAIL"))
+	@Inject(method = "<init>(Lnet/minecraft/entity/Entity;)V", at = @At("TAIL"))
 	public void captureEntity(Entity entity, CallbackInfo ci) {
 		this.entity = entity;
 	}
