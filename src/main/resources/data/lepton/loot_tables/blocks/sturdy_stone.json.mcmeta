@@ -1,0 +1,7 @@
+{
+  "when": [
+    {
+      "lepton:module_enabled": "lepton:sturdy_stone"
+    }
+  ]
+}

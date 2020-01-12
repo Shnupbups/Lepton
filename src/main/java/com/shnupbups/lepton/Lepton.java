@@ -12,6 +12,7 @@ import net.minecraft.util.registry.SimpleRegistry;
 
 import blue.endless.jankson.JsonElement;
 import blue.endless.jankson.JsonPrimitive;
+import com.shnupbups.lepton.helper.LeptonConfig;
 import com.shnupbups.lepton.modules.CarvedPlanksModule;
 import com.shnupbups.lepton.modules.CompressedBlocksModule;
 import com.shnupbups.lepton.modules.DuskboundBlocksModule;
@@ -37,6 +38,7 @@ import com.shnupbups.lepton.modules.VerticalPlanksModule;
 import com.shnupbups.lepton.modules.WeatherSensorModule;
 import io.github.cottonmc.libcd.api.CDSyntaxError;
 import io.github.cottonmc.libcd.api.condition.ConditionManager;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -112,7 +114,11 @@ public class Lepton implements ModInitializer {
 	}
 	
 	public static void log(String text) {
-		LOGGER.info(text);
+		log(text, Level.INFO);
+	}
+	
+	public static void log(String text, Level level) {
+		LOGGER.log(level, text);
 	}
 	
 	@Override
@@ -140,6 +146,8 @@ public class Lepton implements ModInitializer {
 		registerModule(TURF, "turf");
 		registerModule(VERTICAL_PLANKS, "vertical_planks");
 		registerModule(WEATHER_SENSOR, "weather_sensor");
+		
+		LeptonConfig.load();
 		
 		ConditionManager.INSTANCE.registerCondition(id("module_enabled"), value -> {
 			if (value instanceof String) return getModule(new Identifier((String) value)).isEnabled();

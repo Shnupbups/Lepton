@@ -107,45 +107,55 @@ public class MoreStoneVariantsModule extends LeptonModule {
 		Lepton.registerBlock(ANDESITE_PILLAR, "andesite_pillar");
 		
 		if (NewStoneTypesModule.INSTANCE.isEnabled()) {
-			Lepton.registerBlock(MARBLE_BRICKS, "marble_bricks");
-			Lepton.registerBlock(MARBLE_BRICK_SLAB, "marble_brick_slab");
-			Lepton.registerBlock(MARBLE_BRICK_STAIRS, "marble_brick_stairs");
-			Lepton.registerBlock(MARBLE_BRICK_WALL, "marble_brick_wall");
-			Lepton.registerBlock(CHISELED_MARBLE_BRICKS, "chiseled_marble_bricks");
-			Lepton.registerBlock(MARBLE_PAVEMENT, "marble_pavement");
-			Lepton.registerBlock(MARBLE_PILLAR, "marble_pillar");
+			if(NewStoneTypesModule.enableMarble) {
+				Lepton.registerBlock(MARBLE_BRICKS, "marble_bricks");
+				Lepton.registerBlock(MARBLE_BRICK_SLAB, "marble_brick_slab");
+				Lepton.registerBlock(MARBLE_BRICK_STAIRS, "marble_brick_stairs");
+				Lepton.registerBlock(MARBLE_BRICK_WALL, "marble_brick_wall");
+				Lepton.registerBlock(CHISELED_MARBLE_BRICKS, "chiseled_marble_bricks");
+				Lepton.registerBlock(MARBLE_PAVEMENT, "marble_pavement");
+				Lepton.registerBlock(MARBLE_PILLAR, "marble_pillar");
+			}
 			
-			Lepton.registerBlock(LIMESTONE_BRICKS, "limestone_bricks");
-			Lepton.registerBlock(LIMESTONE_BRICK_SLAB, "limestone_brick_slab");
-			Lepton.registerBlock(LIMESTONE_BRICK_STAIRS, "limestone_brick_stairs");
-			Lepton.registerBlock(LIMESTONE_BRICK_WALL, "limestone_brick_wall");
-			Lepton.registerBlock(CHISELED_LIMESTONE_BRICKS, "chiseled_limestone_bricks");
-			Lepton.registerBlock(LIMESTONE_PAVEMENT, "limestone_pavement");
-			Lepton.registerBlock(LIMESTONE_PILLAR, "limestone_pillar");
+			if(NewStoneTypesModule.enableLimestone) {
+				Lepton.registerBlock(LIMESTONE_BRICKS, "limestone_bricks");
+				Lepton.registerBlock(LIMESTONE_BRICK_SLAB, "limestone_brick_slab");
+				Lepton.registerBlock(LIMESTONE_BRICK_STAIRS, "limestone_brick_stairs");
+				Lepton.registerBlock(LIMESTONE_BRICK_WALL, "limestone_brick_wall");
+				Lepton.registerBlock(CHISELED_LIMESTONE_BRICKS, "chiseled_limestone_bricks");
+				Lepton.registerBlock(LIMESTONE_PAVEMENT, "limestone_pavement");
+				Lepton.registerBlock(LIMESTONE_PILLAR, "limestone_pillar");
+			}
 			
-			Lepton.registerBlock(JASPER_BRICKS, "jasper_bricks");
-			Lepton.registerBlock(JASPER_BRICK_SLAB, "jasper_brick_slab");
-			Lepton.registerBlock(JASPER_BRICK_STAIRS, "jasper_brick_stairs");
-			Lepton.registerBlock(JASPER_BRICK_WALL, "jasper_brick_wall");
-			Lepton.registerBlock(CHISELED_JASPER_BRICKS, "chiseled_jasper_bricks");
-			Lepton.registerBlock(JASPER_PAVEMENT, "jasper_pavement");
-			Lepton.registerBlock(JASPER_PILLAR, "jasper_pillar");
+			if(NewStoneTypesModule.enableJasper) {
+				Lepton.registerBlock(JASPER_BRICKS, "jasper_bricks");
+				Lepton.registerBlock(JASPER_BRICK_SLAB, "jasper_brick_slab");
+				Lepton.registerBlock(JASPER_BRICK_STAIRS, "jasper_brick_stairs");
+				Lepton.registerBlock(JASPER_BRICK_WALL, "jasper_brick_wall");
+				Lepton.registerBlock(CHISELED_JASPER_BRICKS, "chiseled_jasper_bricks");
+				Lepton.registerBlock(JASPER_PAVEMENT, "jasper_pavement");
+				Lepton.registerBlock(JASPER_PILLAR, "jasper_pillar");
+			}
 			
-			Lepton.registerBlock(SLATE_BRICKS, "slate_bricks");
-			Lepton.registerBlock(SLATE_BRICK_SLAB, "slate_brick_slab");
-			Lepton.registerBlock(SLATE_BRICK_STAIRS, "slate_brick_stairs");
-			Lepton.registerBlock(SLATE_BRICK_WALL, "slate_brick_wall");
-			Lepton.registerBlock(CHISELED_SLATE_BRICKS, "chiseled_slate_bricks");
-			Lepton.registerBlock(SLATE_PAVEMENT, "slate_pavement");
-			Lepton.registerBlock(SLATE_PILLAR, "slate_pillar");
+			if(NewStoneTypesModule.enableSlate) {
+				Lepton.registerBlock(SLATE_BRICKS, "slate_bricks");
+				Lepton.registerBlock(SLATE_BRICK_SLAB, "slate_brick_slab");
+				Lepton.registerBlock(SLATE_BRICK_STAIRS, "slate_brick_stairs");
+				Lepton.registerBlock(SLATE_BRICK_WALL, "slate_brick_wall");
+				Lepton.registerBlock(CHISELED_SLATE_BRICKS, "chiseled_slate_bricks");
+				Lepton.registerBlock(SLATE_PAVEMENT, "slate_pavement");
+				Lepton.registerBlock(SLATE_PILLAR, "slate_pillar");
+			}
 			
-			Lepton.registerBlock(BASALT_BRICKS, "basalt_bricks");
-			Lepton.registerBlock(BASALT_BRICK_SLAB, "basalt_brick_slab");
-			Lepton.registerBlock(BASALT_BRICK_STAIRS, "basalt_brick_stairs");
-			Lepton.registerBlock(BASALT_BRICK_WALL, "basalt_brick_wall");
-			Lepton.registerBlock(CHISELED_BASALT_BRICKS, "chiseled_basalt_bricks");
-			Lepton.registerBlock(BASALT_PAVEMENT, "basalt_pavement");
-			Lepton.registerBlock(BASALT_PILLAR, "basalt_pillar");
+			if(NewStoneTypesModule.enableBasalt) {
+				Lepton.registerBlock(BASALT_BRICKS, "basalt_bricks");
+				Lepton.registerBlock(BASALT_BRICK_SLAB, "basalt_brick_slab");
+				Lepton.registerBlock(BASALT_BRICK_STAIRS, "basalt_brick_stairs");
+				Lepton.registerBlock(BASALT_BRICK_WALL, "basalt_brick_wall");
+				Lepton.registerBlock(CHISELED_BASALT_BRICKS, "chiseled_basalt_bricks");
+				Lepton.registerBlock(BASALT_PAVEMENT, "basalt_pavement");
+				Lepton.registerBlock(BASALT_PILLAR, "basalt_pillar");
+			}
 		}
 	}
 }

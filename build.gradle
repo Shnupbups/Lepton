@@ -28,7 +28,10 @@ dependencies {
 
 	modImplementation "io.github.cottonmc:LibCD:${project.libcd_version}"
 	include "io.github.cottonmc:LibCD:${project.libcd_version}"
-	
+
+	modImplementation "io.github.cottonmc:Jankson-Fabric:${project.jankson_version}"
+	include "io.github.cottonmc:Jankson-Fabric:${project.jankson_version}"
+
 	// stuff for dev env
 	modCompile "io.github.prospector:modmenu:${project.modmenu_version}"
     modCompile ("me.shedaniel:RoughlyEnoughItems:${project.rei_version}") { exclude(module: 'ModMenu') }
