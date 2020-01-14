@@ -33,11 +33,12 @@ public class NewStoneTypesModule extends LeptonModule {
 	public static boolean enableJasper = true;
 	public static boolean enableSlate = true;
 	public static boolean enableBasalt = true;
-	public static boolean enableMarbleWorldGen = true;
-	public static boolean enableLimestoneWorldGen = true;
-	public static boolean enableJasperWorldGen = true;
-	public static boolean enableSlateWorldGen = true;
-	public static boolean enableBasaltWorldGen = true;
+	
+	public static boolean marbleGenerates = true;
+	public static boolean limestoneGenerates = true;
+	public static boolean jasperGenerates = true;
+	public static boolean slateGenerates = true;
+	public static boolean basaltGenerates = true;
 	
 	public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.QUARTZ).build());
 	public static final Block MARBLE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.QUARTZ).build());
@@ -137,11 +138,11 @@ public class NewStoneTypesModule extends LeptonModule {
 			if (!addedBiomes.contains(biome)) {
 				addedBiomes.add(biome);
 				if (biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NETHER) {
-					if(enableMarble && enableMarbleWorldGen) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, MARBLE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
-					if(enableLimestone && enableLimestoneWorldGen) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, LIMESTONE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
-					if(enableJasper && enableJasperWorldGen) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, JASPER.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
-					if(enableSlate && enableSlateWorldGen) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, SLATE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
-					if(enableBasalt && enableBasaltWorldGen) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, BASALT.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
+					if(enableMarble && marbleGenerates) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, MARBLE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
+					if(enableLimestone && limestoneGenerates) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, LIMESTONE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
+					if(enableJasper && jasperGenerates) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, JASPER.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
+					if(enableSlate && slateGenerates) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, SLATE.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
+					if(enableBasalt && basaltGenerates) biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, BASALT.getDefaultState(), 33)).createDecoratedFeature(Decorator.COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 80))));
 				}
 			}
 		}
@@ -153,23 +154,23 @@ public class NewStoneTypesModule extends LeptonModule {
 		
 		JsonObject marble = LeptonConfig.getObjectOrEmpty("marble", obj);
 		enableMarble = marble.getBoolean("enabled", enableMarble);
-		enableMarbleWorldGen = marble.getBoolean("worldgen", enableMarbleWorldGen);
+		marbleGenerates = marble.getBoolean("generates", marbleGenerates);
 		
 		JsonObject limestone = LeptonConfig.getObjectOrEmpty("limestone", obj);
 		enableLimestone = limestone.getBoolean("enabled", enableLimestone);
-		enableLimestoneWorldGen = limestone.getBoolean("worldgen", enableLimestoneWorldGen);
+		limestoneGenerates = limestone.getBoolean("generates", limestoneGenerates);
 		
 		JsonObject jasper = LeptonConfig.getObjectOrEmpty("jasper", obj);
 		enableJasper = jasper.getBoolean("enabled", enableJasper);
-		enableJasperWorldGen = jasper.getBoolean("worldgen", enableJasperWorldGen);
+		jasperGenerates = jasper.getBoolean("generates", jasperGenerates);
 		
 		JsonObject slate = LeptonConfig.getObjectOrEmpty("slate", obj);
 		enableSlate = slate.getBoolean("enabled", enableSlate);
-		enableSlateWorldGen = slate.getBoolean("worldgen", enableSlateWorldGen);
+		slateGenerates = slate.getBoolean("generates", slateGenerates);
 		
 		JsonObject basalt = LeptonConfig.getObjectOrEmpty("basalt", obj);
 		enableBasalt = basalt.getBoolean("enabled", enableBasalt);
-		enableBasaltWorldGen = basalt.getBoolean("worldgen", enableBasaltWorldGen);
+		basaltGenerates = basalt.getBoolean("generates", basaltGenerates);
 	}
 	
 	@Override
@@ -178,27 +179,27 @@ public class NewStoneTypesModule extends LeptonModule {
 		
 		JsonObject marble = new JsonObject();
 		marble.put("enabled", new JsonPrimitive(enableMarble));
-		marble.put("worldgen", new JsonPrimitive(enableMarbleWorldGen));
+		marble.put("generates", new JsonPrimitive(marbleGenerates));
 		obj.put("marble", marble);
 		
 		JsonObject limestone = new JsonObject();
 		limestone.put("enabled", new JsonPrimitive(enableLimestone));
-		limestone.put("worldgen", new JsonPrimitive(enableLimestoneWorldGen));
+		limestone.put("generates", new JsonPrimitive(limestoneGenerates));
 		obj.put("limestone", limestone);
 		
 		JsonObject jasper = new JsonObject();
 		jasper.put("enabled", new JsonPrimitive(enableJasper));
-		jasper.put("worldgen", new JsonPrimitive(enableJasperWorldGen));
+		jasper.put("generates", new JsonPrimitive(jasperGenerates));
 		obj.put("jasper", jasper);
 		
 		JsonObject slate = new JsonObject();
 		slate.put("enabled", new JsonPrimitive(enableSlate));
-		slate.put("worldgen", new JsonPrimitive(enableSlateWorldGen));
+		slate.put("generates", new JsonPrimitive(slateGenerates));
 		obj.put("slate", slate);
 		
 		JsonObject basalt = new JsonObject();
 		basalt.put("enabled", new JsonPrimitive(enableBasalt));
-		basalt.put("worldgen", new JsonPrimitive(enableBasaltWorldGen));
+		basalt.put("generates", new JsonPrimitive(basaltGenerates));
 		obj.put("basalt", basalt);
 	}
 }

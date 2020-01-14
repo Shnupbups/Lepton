@@ -9,10 +9,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.SimpleRegistry;
+import net.minecraft.world.gen.feature.Feature;
 
 import blue.endless.jankson.JsonElement;
 import blue.endless.jankson.JsonPrimitive;
 import com.shnupbups.lepton.helper.LeptonConfig;
+import com.shnupbups.lepton.modules.BiotiteModule;
 import com.shnupbups.lepton.modules.CarvedPlanksModule;
 import com.shnupbups.lepton.modules.CompressedBlocksModule;
 import com.shnupbups.lepton.modules.DuskboundBlocksModule;
@@ -27,6 +29,7 @@ import com.shnupbups.lepton.modules.MoreBrickTypesModule;
 import com.shnupbups.lepton.modules.MoreStoneVariantsModule;
 import com.shnupbups.lepton.modules.NetherBrickFenceGateModule;
 import com.shnupbups.lepton.modules.NewStoneTypesModule;
+import com.shnupbups.lepton.modules.ObsidianPressurePlateModule;
 import com.shnupbups.lepton.modules.QuiltedWoolModule;
 import com.shnupbups.lepton.modules.ShinglesModule;
 import com.shnupbups.lepton.modules.SoulSandstoneModule;
@@ -52,6 +55,7 @@ public class Lepton implements ModInitializer {
 	
 	public static final Registry<LeptonModule> MODULES = new SimpleRegistry<>();
 	
+	public static final LeptonModule BIOTITE = BiotiteModule.INSTANCE;
 	public static final LeptonModule CARVED_PLANKS = CarvedPlanksModule.INSTANCE;
 	public static final LeptonModule COMPRESSED_BLOCKS = CompressedBlocksModule.INSTANCE;
 	public static final LeptonModule DUSKBOUND_BLOCKS = DuskboundBlocksModule.INSTANCE;
@@ -66,6 +70,7 @@ public class Lepton implements ModInitializer {
 	public static final LeptonModule MORE_STONE_VARIANTS = MoreStoneVariantsModule.INSTANCE;
 	public static final LeptonModule NETHER_BRICK_FENCE_GATE = NetherBrickFenceGateModule.INSTANCE;
 	public static final LeptonModule NEW_STONE_TYPES = NewStoneTypesModule.INSTANCE;
+	public static final LeptonModule OBSIDIAN_PRESSURE_PLATE = ObsidianPressurePlateModule.INSTANCE;
 	public static final LeptonModule QUILTED_WOOL = QuiltedWoolModule.INSTANCE;
 	public static final LeptonModule SHINGLES = ShinglesModule.INSTANCE;
 	public static final LeptonModule SOUL_SANDSTONE = SoulSandstoneModule.INSTANCE;
@@ -123,6 +128,7 @@ public class Lepton implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		registerModule(BIOTITE, "biotite");
 		registerModule(CARVED_PLANKS, "carved_planks");
 		registerModule(COMPRESSED_BLOCKS, "compressed_blocks");
 		registerModule(DUSKBOUND_BLOCKS, "duskbound_blocks");
@@ -137,6 +143,7 @@ public class Lepton implements ModInitializer {
 		registerModule(MORE_STONE_VARIANTS, "more_stone_variants");
 		registerModule(NETHER_BRICK_FENCE_GATE, "nether_brick_fence_gate");
 		registerModule(NEW_STONE_TYPES, "new_stone_types");
+		registerModule(OBSIDIAN_PRESSURE_PLATE, "obsidian_pressure_plate");
 		registerModule(QUILTED_WOOL, "quilted_wool");
 		registerModule(SHINGLES, "shingles");
 		registerModule(SOUL_SANDSTONE, "soul_sandstone");

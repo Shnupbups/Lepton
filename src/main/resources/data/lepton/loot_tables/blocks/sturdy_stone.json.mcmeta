@@ -1,7 +1,7 @@
 {
   "when": [
     {
-      "lepton:module_enabled": "lepton:sturdy_stone"
+      "libcd:item_exists": "lepton:sturdy_stone"
     }
   ]
 }

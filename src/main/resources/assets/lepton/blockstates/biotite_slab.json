@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "lepton:block/biotite_slab" },
+        "type=top": { "model": "lepton:block/biotite_slab_top" },
+        "type=double": { "model": "lepton:block/biotite_block" }
+    }
+}
