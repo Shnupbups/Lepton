@@ -20,7 +20,7 @@ import blue.endless.jankson.JsonPrimitive;
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.LeptonModule;
 import com.shnupbups.lepton.block.LeptonStairsBlock;
-import com.shnupbups.lepton.helper.LeptonConfig;
+import com.shnupbups.lepton.misc.LeptonConfig;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -20,7 +20,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-import com.shnupbups.lepton.helper.EntityGetter;
+import com.shnupbups.lepton.misc.EntityGetter;
 import it.unimi.dsi.fastutil.floats.Float2ObjectArrayMap;
 
 import javax.annotation.Nullable;

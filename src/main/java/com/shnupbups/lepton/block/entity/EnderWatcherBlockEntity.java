@@ -13,7 +13,7 @@ import net.minecraft.util.math.Box;
 import net.minecraft.world.RayTraceContext;
 
 import com.shnupbups.lepton.block.EnderWatcherBlock;
-import com.shnupbups.lepton.helper.RayTraceHandler;
+import com.shnupbups.lepton.misc.RayTraceHandler;
 import com.shnupbups.lepton.modules.EnderWatcherModule;
 
 import java.util.List;

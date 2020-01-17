@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityContextImpl;
 
-import com.shnupbups.lepton.helper.EntityGetter;
+import com.shnupbups.lepton.misc.EntityGetter;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package com.shnupbups.lepton.helper;
+package com.shnupbups.lepton.misc;
 
 import net.minecraft.entity.Entity;
 

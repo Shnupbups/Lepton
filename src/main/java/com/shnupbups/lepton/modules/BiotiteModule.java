@@ -9,15 +9,11 @@ import net.minecraft.block.PillarBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.world.biome.Biome;
 
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.LeptonModule;
 import com.shnupbups.lepton.block.BiotiteOreBlock;
 import com.shnupbups.lepton.block.LeptonStairsBlock;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class BiotiteModule extends LeptonModule {
 	public static final BiotiteModule INSTANCE = new BiotiteModule();

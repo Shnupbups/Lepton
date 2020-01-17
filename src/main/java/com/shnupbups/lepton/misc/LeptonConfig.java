@@ -1,7 +1,6 @@
-package com.shnupbups.lepton.helper;
+package com.shnupbups.lepton.misc;
 
 import blue.endless.jankson.Jankson;
-import blue.endless.jankson.JsonElement;
 import blue.endless.jankson.JsonGrammar;
 import blue.endless.jankson.JsonObject;
 import blue.endless.jankson.api.SyntaxError;
