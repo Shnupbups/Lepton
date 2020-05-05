@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -11,22 +11,22 @@ import com.shnupbups.lepton.LeptonModule;
 public class QuiltedWoolModule extends LeptonModule {
 	public static final QuiltedWoolModule INSTANCE = new QuiltedWoolModule();
 	
-	public static final Block WHITE_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.WHITE_WOOL).build());
-	public static final Block ORANGE_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.ORANGE_WOOL).build());
-	public static final Block MAGENTA_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.MAGENTA_WOOL).build());
-	public static final Block LIGHT_BLUE_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.LIGHT_BLUE_WOOL).build());
-	public static final Block YELLOW_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.YELLOW_WOOL).build());
-	public static final Block LIME_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.LIME_WOOL).build());
-	public static final Block PINK_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.PINK_WOOL).build());
-	public static final Block GRAY_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.GRAY_WOOL).build());
-	public static final Block LIGHT_GRAY_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.LIGHT_GRAY_WOOL).build());
-	public static final Block CYAN_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.CYAN_WOOL).build());
-	public static final Block PURPLE_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.PURPLE_WOOL).build());
-	public static final Block BLUE_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.BLUE_WOOL).build());
-	public static final Block BROWN_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.BROWN_WOOL).build());
-	public static final Block GREEN_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.GREEN_WOOL).build());
-	public static final Block RED_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.RED_WOOL).build());
-	public static final Block BLACK_QUILTED_WOOL = new Block(FabricBlockSettings.copy(Blocks.BLACK_WOOL).build());
+	public static final Block WHITE_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL));
+	public static final Block ORANGE_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.ORANGE_WOOL));
+	public static final Block MAGENTA_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.MAGENTA_WOOL));
+	public static final Block LIGHT_BLUE_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_WOOL));
+	public static final Block YELLOW_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.YELLOW_WOOL));
+	public static final Block LIME_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.LIME_WOOL));
+	public static final Block PINK_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.PINK_WOOL));
+	public static final Block GRAY_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.GRAY_WOOL));
+	public static final Block LIGHT_GRAY_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_WOOL));
+	public static final Block CYAN_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.CYAN_WOOL));
+	public static final Block PURPLE_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.PURPLE_WOOL));
+	public static final Block BLUE_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.BLUE_WOOL));
+	public static final Block BROWN_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.BROWN_WOOL));
+	public static final Block GREEN_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.GREEN_WOOL));
+	public static final Block RED_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.RED_WOOL));
+	public static final Block BLACK_QUILTED_WOOL = new Block(FabricBlockSettings.copyOf(Blocks.BLACK_WOOL));
 	
 	@Override
 	public void init() {

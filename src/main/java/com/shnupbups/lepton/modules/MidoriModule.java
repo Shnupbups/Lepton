@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -19,10 +19,10 @@ public class MidoriModule extends LeptonModule {
 	
 	public static final Item CACTUS_PASTE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 	
-	public static final Block MIDORI_BLOCK = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK).materialColor(MaterialColor.LIME).build());
-	public static final Block MIDORI_STAIRS = new LeptonStairsBlock(MIDORI_BLOCK.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_STAIRS).materialColor(MaterialColor.LIME).build());
-	public static final Block MIDORI_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.PURPUR_SLAB).materialColor(MaterialColor.LIME).build());
-	public static final Block MIDORI_PILLAR = new PillarBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK).materialColor(MaterialColor.LIME).build());
+	public static final Block MIDORI_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK).materialColor(MaterialColor.LIME));
+	public static final Block MIDORI_STAIRS = new LeptonStairsBlock(MIDORI_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PURPUR_STAIRS).materialColor(MaterialColor.LIME));
+	public static final Block MIDORI_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.PURPUR_SLAB).materialColor(MaterialColor.LIME));
+	public static final Block MIDORI_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK).materialColor(MaterialColor.LIME));
 	
 	@Override
 	public void init() {

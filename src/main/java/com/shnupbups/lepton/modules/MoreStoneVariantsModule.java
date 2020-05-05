@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -16,69 +16,69 @@ import com.shnupbups.lepton.block.LeptonStairsBlock;
 public class MoreStoneVariantsModule extends LeptonModule {
 	public static final MoreStoneVariantsModule INSTANCE = new MoreStoneVariantsModule();
 	
-	public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.DIRT).build());
-	public static final Block GRANITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.DIRT).build());
-	public static final Block GRANITE_BRICK_STAIRS = new LeptonStairsBlock(GRANITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.DIRT).build());
-	public static final Block GRANITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.DIRT).build());
-	public static final Block CHISELED_GRANITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.DIRT).build());
-	public static final Block GRANITE_PAVEMENT = new Block(FabricBlockSettings.copy(GRANITE_BRICKS).build());
-	public static final Block GRANITE_PILLAR = new PillarBlock(FabricBlockSettings.copy(GRANITE_BRICKS).build());
+	public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.DIRT));
+	public static final Block GRANITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.DIRT));
+	public static final Block GRANITE_BRICK_STAIRS = new LeptonStairsBlock(GRANITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.DIRT));
+	public static final Block GRANITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.DIRT));
+	public static final Block CHISELED_GRANITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.DIRT));
+	public static final Block GRANITE_PAVEMENT = new Block(FabricBlockSettings.copyOf(GRANITE_BRICKS));
+	public static final Block GRANITE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(GRANITE_BRICKS));
 	
-	public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block DIORITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block DIORITE_BRICK_STAIRS = new LeptonStairsBlock(DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block DIORITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block CHISELED_DIORITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block DIORITE_PAVEMENT = new Block(FabricBlockSettings.copy(DIORITE_BRICKS).build());
-	public static final Block DIORITE_PILLAR = new PillarBlock(FabricBlockSettings.copy(DIORITE_BRICKS).build());
+	public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.QUARTZ));
+	public static final Block DIORITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.QUARTZ));
+	public static final Block DIORITE_BRICK_STAIRS = new LeptonStairsBlock(DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.QUARTZ));
+	public static final Block DIORITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.QUARTZ));
+	public static final Block CHISELED_DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.QUARTZ));
+	public static final Block DIORITE_PAVEMENT = new Block(FabricBlockSettings.copyOf(DIORITE_BRICKS));
+	public static final Block DIORITE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(DIORITE_BRICKS));
 	
-	public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.STONE).build());
-	public static final Block ANDESITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.STONE).build());
-	public static final Block ANDESITE_BRICK_STAIRS = new LeptonStairsBlock(ANDESITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.STONE).build());
-	public static final Block ANDESITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.STONE).build());
-	public static final Block CHISELED_ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.STONE).build());
-	public static final Block ANDESITE_PAVEMENT = new Block(FabricBlockSettings.copy(ANDESITE_BRICKS).build());
-	public static final Block ANDESITE_PILLAR = new PillarBlock(FabricBlockSettings.copy(ANDESITE_BRICKS).build());
+	public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.STONE));
+	public static final Block ANDESITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.STONE));
+	public static final Block ANDESITE_BRICK_STAIRS = new LeptonStairsBlock(ANDESITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.STONE));
+	public static final Block ANDESITE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.STONE));
+	public static final Block CHISELED_ANDESITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.STONE));
+	public static final Block ANDESITE_PAVEMENT = new Block(FabricBlockSettings.copyOf(ANDESITE_BRICKS));
+	public static final Block ANDESITE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(ANDESITE_BRICKS));
 	
-	public static final Block MARBLE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_BRICK_STAIRS = new LeptonStairsBlock(MARBLE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block CHISELED_MARBLE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_PAVEMENT = new Block(FabricBlockSettings.copy(MARBLE_BRICKS).build());
-	public static final Block MARBLE_PILLAR = new PillarBlock(FabricBlockSettings.copy(MARBLE_BRICKS).build());
+	public static final Block MARBLE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_BRICK_STAIRS = new LeptonStairsBlock(MARBLE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.QUARTZ));
+	public static final Block CHISELED_MARBLE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_PAVEMENT = new Block(FabricBlockSettings.copyOf(MARBLE_BRICKS));
+	public static final Block MARBLE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(MARBLE_BRICKS));
 	
-	public static final Block LIMESTONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_BRICK_STAIRS = new LeptonStairsBlock(LIMESTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.STONE).build());
-	public static final Block CHISELED_LIMESTONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_PAVEMENT = new Block(FabricBlockSettings.copy(LIMESTONE_BRICKS).build());
-	public static final Block LIMESTONE_PILLAR = new PillarBlock(FabricBlockSettings.copy(LIMESTONE_BRICKS).build());
+	public static final Block LIMESTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_BRICK_STAIRS = new LeptonStairsBlock(LIMESTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.STONE));
+	public static final Block CHISELED_LIMESTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_PAVEMENT = new Block(FabricBlockSettings.copyOf(LIMESTONE_BRICKS));
+	public static final Block LIMESTONE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(LIMESTONE_BRICKS));
 	
-	public static final Block JASPER_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_BRICK_STAIRS = new LeptonStairsBlock(JASPER_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block CHISELED_JASPER_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_PAVEMENT = new Block(FabricBlockSettings.copy(JASPER_BRICKS).build());
-	public static final Block JASPER_PILLAR = new PillarBlock(FabricBlockSettings.copy(JASPER_BRICKS).build());
+	public static final Block JASPER_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_BRICK_STAIRS = new LeptonStairsBlock(JASPER_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block CHISELED_JASPER_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_PAVEMENT = new Block(FabricBlockSettings.copyOf(JASPER_BRICKS));
+	public static final Block JASPER_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(JASPER_BRICKS));
 	
-	public static final Block SLATE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_BRICK_STAIRS = new LeptonStairsBlock(SLATE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.ICE).build());
-	public static final Block CHISELED_SLATE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_PAVEMENT = new Block(FabricBlockSettings.copy(SLATE_BRICKS).build());
-	public static final Block SLATE_PILLAR = new PillarBlock(FabricBlockSettings.copy(SLATE_BRICKS).build());
+	public static final Block SLATE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_BRICK_STAIRS = new LeptonStairsBlock(SLATE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.ICE));
+	public static final Block CHISELED_SLATE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_PAVEMENT = new Block(FabricBlockSettings.copyOf(SLATE_BRICKS));
+	public static final Block SLATE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(SLATE_BRICKS));
 	
-	public static final Block BASALT_BRICKS = new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_BRICK_STAIRS = new LeptonStairsBlock(BASALT_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.BLACK).build());
-	public static final Block CHISELED_BASALT_BRICKS = new Block(FabricBlockSettings.copy(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_PAVEMENT = new Block(FabricBlockSettings.copy(BASALT_BRICKS).build());
-	public static final Block BASALT_PILLAR = new PillarBlock(FabricBlockSettings.copy(BASALT_BRICKS).build());
+	public static final Block BASALT_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_BRICK_STAIRS = new LeptonStairsBlock(BASALT_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL).materialColor(MaterialColor.BLACK));
+	public static final Block CHISELED_BASALT_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_PAVEMENT = new Block(FabricBlockSettings.copyOf(BASALT_BRICKS));
+	public static final Block BASALT_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(BASALT_BRICKS));
 	
 	@Override
 	public void init() {

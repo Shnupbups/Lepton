@@ -15,10 +15,12 @@ Automation Module
 
 Building Module
 - Carved Wood
+- Cobblestone Bricks
 - Colored Flower Pots
 - Compressed Blocks
 - Duskbound Blocks
 - Framed Glass
+- Gold Bars
 - Iron Grate
 - Iron Plates
 - Item Frame Variants
@@ -48,7 +50,14 @@ Building Module
 - Vertical Slabs
 - Wood Walls
 
+Mobs Module
+- Crabs
+- Depth Mobs
+- Foxhounds
+- Frogs
+
 Tools Module
+- Colored Runes
 - Extra Arrows
 - Slime Bucket
 - Trowel
@@ -60,11 +69,13 @@ Tweaks Module
 - Blastproof Shulker Boxes
 - Burning Baby Zombies
 - Burning Torches
+- Campfires Boost Elytra
 - Chicken Shearing
 - Dirt To Path
+- Double Door Opening
 - Dragon Scales
+- Enhanced Ladders
 - Glass Shards
-- Ladder Drop Down
 - Minecart Block Placement
 - Pat The Dogs
 - Parrot Eggs
@@ -84,9 +95,7 @@ World Module
 - Brimstone
 - Cave Roots
 - Crystals
-- Depth Mobs
 - Elder Prismarine
-- Foxhounds
 - Glowshrooms And Glowcelium
 - Monster Boxes
 - Nether Fossils
@@ -96,3 +105,6 @@ World Module
 - Permafrost
 - Speleothems
 - Underground Clay
+
+Oddities
+- Magnets

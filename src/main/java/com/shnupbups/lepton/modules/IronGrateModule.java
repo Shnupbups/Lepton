@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -12,7 +12,7 @@ import com.shnupbups.lepton.block.GrateBlock;
 public class IronGrateModule extends LeptonModule {
 	public static final IronGrateModule INSTANCE = new IronGrateModule();
 	
-	public static final Block IRON_GRATE = new GrateBlock(FabricBlockSettings.copy(Blocks.IRON_BARS).build());
+	public static final Block IRON_GRATE = new GrateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).allowsSpawning((state, world, pos, type) -> false).dynamicBounds().suffocates((state, world, pos) -> false));
 	
 	@Override
 	public void init() {

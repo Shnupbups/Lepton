@@ -42,9 +42,4 @@ public class EnderWatcherBlock extends Block implements BlockEntityProvider {
 	public boolean emitsRedstonePower(BlockState state) {
 		return true;
 	}
-	
-	@Override
-	public boolean hasBlockEntity() {
-		return true;
-	}
 }

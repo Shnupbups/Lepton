@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -40,45 +40,45 @@ public class NewStoneTypesModule extends LeptonModule {
 	public static boolean slateGenerates = true;
 	public static boolean basaltGenerates = true;
 	
-	public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_STAIRS = new LeptonStairsBlock(MARBLE.getDefaultState(), FabricBlockSettings.copy(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block MARBLE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.GRANITE_WALL).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block POLISHED_MARBLE = new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block POLISHED_MARBLE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.QUARTZ).build());
-	public static final Block POLISHED_MARBLE_STAIRS = new LeptonStairsBlock(POLISHED_MARBLE.getDefaultState(), FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.QUARTZ).build());
+	public static final Block MARBLE = new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_SLAB).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_STAIRS = new LeptonStairsBlock(MARBLE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.QUARTZ));
+	public static final Block MARBLE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_WALL).materialColor(MaterialColor.QUARTZ));
+	public static final Block POLISHED_MARBLE = new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.QUARTZ));
+	public static final Block POLISHED_MARBLE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.QUARTZ));
+	public static final Block POLISHED_MARBLE_STAIRS = new LeptonStairsBlock(POLISHED_MARBLE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.QUARTZ));
 	
-	public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_STAIRS = new LeptonStairsBlock(LIMESTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.STONE).build());
-	public static final Block LIMESTONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.GRANITE_WALL).materialColor(MaterialColor.STONE).build());
-	public static final Block POLISHED_LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.STONE).build());
-	public static final Block POLISHED_LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.STONE).build());
-	public static final Block POLISHED_LIMESTONE_STAIRS = new LeptonStairsBlock(POLISHED_LIMESTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.STONE).build());
+	public static final Block LIMESTONE = new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_SLAB).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_STAIRS = new LeptonStairsBlock(LIMESTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.STONE));
+	public static final Block LIMESTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_WALL).materialColor(MaterialColor.STONE));
+	public static final Block POLISHED_LIMESTONE = new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.STONE));
+	public static final Block POLISHED_LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.STONE));
+	public static final Block POLISHED_LIMESTONE_STAIRS = new LeptonStairsBlock(POLISHED_LIMESTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.STONE));
 	
-	public static final Block JASPER = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_STAIRS = new LeptonStairsBlock(JASPER.getDefaultState(), FabricBlockSettings.copy(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block JASPER_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.GRANITE_WALL).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block POLISHED_JASPER = new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block POLISHED_JASPER_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.RED_TERRACOTTA).build());
-	public static final Block POLISHED_JASPER_STAIRS = new LeptonStairsBlock(POLISHED_JASPER.getDefaultState(), FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA).build());
+	public static final Block JASPER = new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_SLAB).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_STAIRS = new LeptonStairsBlock(JASPER.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block JASPER_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_WALL).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block POLISHED_JASPER = new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block POLISHED_JASPER_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.RED_TERRACOTTA));
+	public static final Block POLISHED_JASPER_STAIRS = new LeptonStairsBlock(POLISHED_JASPER.getDefaultState(), FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.RED_TERRACOTTA));
 	
-	public static final Block SLATE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_STAIRS = new LeptonStairsBlock(SLATE.getDefaultState(), FabricBlockSettings.copy(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.ICE).build());
-	public static final Block SLATE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.GRANITE_WALL).materialColor(MaterialColor.ICE).build());
-	public static final Block POLISHED_SLATE = new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.ICE).build());
-	public static final Block POLISHED_SLATE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.ICE).build());
-	public static final Block POLISHED_SLATE_STAIRS = new LeptonStairsBlock(POLISHED_SLATE.getDefaultState(), FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.ICE).build());
+	public static final Block SLATE = new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_SLAB).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_STAIRS = new LeptonStairsBlock(SLATE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.ICE));
+	public static final Block SLATE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_WALL).materialColor(MaterialColor.ICE));
+	public static final Block POLISHED_SLATE = new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.ICE));
+	public static final Block POLISHED_SLATE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.ICE));
+	public static final Block POLISHED_SLATE_STAIRS = new LeptonStairsBlock(POLISHED_SLATE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.ICE));
 	
-	public static final Block BASALT = new Block(FabricBlockSettings.copy(Blocks.GRANITE).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRANITE_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_STAIRS = new LeptonStairsBlock(BASALT.getDefaultState(), FabricBlockSettings.copy(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.BLACK).build());
-	public static final Block BASALT_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.GRANITE_WALL).materialColor(MaterialColor.BLACK).build());
-	public static final Block POLISHED_BASALT = new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.BLACK).build());
-	public static final Block POLISHED_BASALT_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block POLISHED_BASALT_STAIRS = new LeptonStairsBlock(POLISHED_BASALT.getDefaultState(), FabricBlockSettings.copy(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.BLACK).build());
+	public static final Block BASALT = new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_STAIRS = new LeptonStairsBlock(BASALT.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRANITE_STAIRS).materialColor(MaterialColor.BLACK));
+	public static final Block BASALT_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.GRANITE_WALL).materialColor(MaterialColor.BLACK));
+	public static final Block POLISHED_BASALT = new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE).materialColor(MaterialColor.BLACK));
+	public static final Block POLISHED_BASALT_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block POLISHED_BASALT_STAIRS = new LeptonStairsBlock(POLISHED_BASALT.getDefaultState(), FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE_STAIRS).materialColor(MaterialColor.BLACK));
 	
 	private static List<Biome> addedBiomes = new ArrayList<>();
 	

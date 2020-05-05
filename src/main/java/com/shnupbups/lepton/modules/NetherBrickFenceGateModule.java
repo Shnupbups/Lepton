@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -14,7 +14,7 @@ import com.shnupbups.lepton.LeptonModule;
 public class NetherBrickFenceGateModule extends LeptonModule {
 	public static final NetherBrickFenceGateModule INSTANCE = new NetherBrickFenceGateModule();
 	
-	public static final Block NETHER_BRICK_FENCE_GATE = new FenceGateBlock(FabricBlockSettings.copy(Blocks.NETHER_BRICK_FENCE).build());
+	public static final Block NETHER_BRICK_FENCE_GATE = new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICK_FENCE));
 	
 	@Override
 	public void init() {

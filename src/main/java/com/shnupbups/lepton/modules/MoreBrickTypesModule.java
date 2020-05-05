@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -11,50 +11,46 @@ import net.minecraft.block.WallBlock;
 import com.shnupbups.lepton.Lepton;
 import com.shnupbups.lepton.LeptonModule;
 import com.shnupbups.lepton.block.LeptonStairsBlock;
-import com.shnupbups.lepton.block.MagmaBrickBlock;
-import com.shnupbups.lepton.block.MagmaBrickSlabBlock;
-import com.shnupbups.lepton.block.MagmaBrickStairsBlock;
-import com.shnupbups.lepton.block.MagmaBrickWallBlock;
 
 public class MoreBrickTypesModule extends LeptonModule {
 	public static final MoreBrickTypesModule INSTANCE = new MoreBrickTypesModule();
 	
-	public static final Block SANDY_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDY_BRICK_STAIRS = new LeptonStairsBlock(SANDY_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDY_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDY_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.SAND).build());
+	public static final Block SANDY_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.SAND));
+	public static final Block SANDY_BRICK_STAIRS = new LeptonStairsBlock(SANDY_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.SAND));
+	public static final Block SANDY_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.SAND));
+	public static final Block SANDY_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.SAND));
 	
-	public static final Block SNOW_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.WHITE).build());
-	public static final Block SNOW_BRICK_STAIRS = new LeptonStairsBlock(SNOW_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.WHITE).build());
-	public static final Block SNOW_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.WHITE).build());
-	public static final Block SNOW_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.WHITE).build());
+	public static final Block SNOW_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.WHITE));
+	public static final Block SNOW_BRICK_STAIRS = new LeptonStairsBlock(SNOW_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.WHITE));
+	public static final Block SNOW_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.WHITE));
+	public static final Block SNOW_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.WHITE));
 	
-	public static final Block CHARRED_NETHER_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.BLACK).build());
-	public static final Block CHARRED_NETHER_BRICK_STAIRS = new LeptonStairsBlock(CHARRED_NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.BLACK).build());
-	public static final Block CHARRED_NETHER_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block CHARRED_NETHER_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.BLACK).build());
+	public static final Block CHARRED_NETHER_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.BLACK));
+	public static final Block CHARRED_NETHER_BRICK_STAIRS = new LeptonStairsBlock(CHARRED_NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.BLACK));
+	public static final Block CHARRED_NETHER_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block CHARRED_NETHER_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.BLACK));
 	
-	public static final Block SANDSTONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.SAND).build());
-	public static final Block SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.SAND).build());
+	public static final Block SANDSTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.SAND));
+	public static final Block SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.SAND));
+	public static final Block SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.SAND));
+	public static final Block SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.SAND));
 	
-	public static final Block RED_SANDSTONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.ORANGE).build());
-	public static final Block RED_SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(RED_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.ORANGE).build());
-	public static final Block RED_SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.ORANGE).build());
-	public static final Block RED_SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.ORANGE).build());
+	public static final Block RED_SANDSTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.ORANGE));
+	public static final Block RED_SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(RED_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.ORANGE));
+	public static final Block RED_SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.ORANGE));
+	public static final Block RED_SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.ORANGE));
 	
-	public static final Block SOUL_SANDSTONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(SOUL_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BRICK_STAIRS).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICK_SLAB).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).materialColor(MaterialColor.BROWN).build());
+	public static final Block SOUL_SANDSTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.BRICKS).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_BRICK_STAIRS = new LeptonStairsBlock(SOUL_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BRICK_STAIRS).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.BRICK_SLAB).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BRICK_WALL).materialColor(MaterialColor.BROWN));
 	
-	private static final FabricBlockSettings MAGMA_BRICK_SETTINGS = FabricBlockSettings.copy(Blocks.MAGMA_BLOCK).strength(1.5f, 10f);
+	private static final FabricBlockSettings MAGMA_BRICK_SETTINGS = FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).strength(1.5f, 10f);
 	
-	public static final Block MAGMA_BRICKS = new MagmaBrickBlock(MAGMA_BRICK_SETTINGS.build());
-	public static final Block MAGMA_BRICK_STAIRS = new MagmaBrickStairsBlock(MAGMA_BRICKS.getDefaultState(), MAGMA_BRICK_SETTINGS.build());
-	public static final Block MAGMA_BRICK_SLAB = new MagmaBrickSlabBlock(MAGMA_BRICK_SETTINGS.build());
-	public static final Block MAGMA_BRICK_WALL = new MagmaBrickWallBlock(MAGMA_BRICK_SETTINGS.build());
+	public static final Block MAGMA_BRICKS = new Block(MAGMA_BRICK_SETTINGS);
+	public static final Block MAGMA_BRICK_STAIRS = new LeptonStairsBlock(MAGMA_BRICKS.getDefaultState(), MAGMA_BRICK_SETTINGS);
+	public static final Block MAGMA_BRICK_SLAB = new SlabBlock(MAGMA_BRICK_SETTINGS);
+	public static final Block MAGMA_BRICK_WALL = new WallBlock(MAGMA_BRICK_SETTINGS);
 	
 	@Override
 	public void init() {

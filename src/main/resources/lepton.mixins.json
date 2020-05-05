@@ -3,8 +3,7 @@
 	"package": "com.shnupbups.lepton.mixin",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [
-		"EntityContextImplMixin",
-		"LivingEntityMixin",
+		"EntityShapeContextMixin",
 		"PlayerEntityMixin"
 	],
 	"client": [

@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -15,16 +15,16 @@ import com.shnupbups.lepton.block.LeptonStairsBlock;
 public class SoulSandstoneModule extends LeptonModule {
 	public static final SoulSandstoneModule INSTANCE = new SoulSandstoneModule();
 	
-	public static final Block SOUL_SANDSTONE = new Block(FabricBlockSettings.copy(Blocks.SANDSTONE).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.SANDSTONE_SLAB).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_STAIRS = new LeptonStairsBlock(SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.SANDSTONE_STAIRS).materialColor(MaterialColor.BROWN).build());
-	public static final Block SOUL_SANDSTONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.SANDSTONE_WALL).materialColor(MaterialColor.BROWN).build());
-	public static final Block CHISELED_SOUL_SANDSTONE = new Block(FabricBlockSettings.copy(Blocks.CHISELED_SANDSTONE).materialColor(MaterialColor.BROWN).build());
-	public static final Block CUT_SOUL_SANDSTONE = new Block(FabricBlockSettings.copy(Blocks.CUT_SANDSTONE).materialColor(MaterialColor.BROWN).build());
-	public static final Block CUT_SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.CUT_SANDSTONE_SLAB).materialColor(MaterialColor.BROWN).build());
-	public static final Block SMOOTH_SOUL_SANDSTONE = new Block(FabricBlockSettings.copy(Blocks.SMOOTH_SANDSTONE).materialColor(MaterialColor.BROWN).build());
-	public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.SMOOTH_SANDSTONE_SLAB).materialColor(MaterialColor.BROWN).build());
-	public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = new LeptonStairsBlock(SMOOTH_SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.SMOOTH_SANDSTONE_STAIRS).materialColor(MaterialColor.BROWN).build());
+	public static final Block SOUL_SANDSTONE = new Block(FabricBlockSettings.copyOf(Blocks.SANDSTONE).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_SLAB).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_STAIRS = new LeptonStairsBlock(SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SANDSTONE_STAIRS).materialColor(MaterialColor.BROWN));
+	public static final Block SOUL_SANDSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_WALL).materialColor(MaterialColor.BROWN));
+	public static final Block CHISELED_SOUL_SANDSTONE = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_SANDSTONE).materialColor(MaterialColor.BROWN));
+	public static final Block CUT_SOUL_SANDSTONE = new Block(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE).materialColor(MaterialColor.BROWN));
+	public static final Block CUT_SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE_SLAB).materialColor(MaterialColor.BROWN));
+	public static final Block SMOOTH_SOUL_SANDSTONE = new Block(FabricBlockSettings.copyOf(Blocks.SMOOTH_SANDSTONE).materialColor(MaterialColor.BROWN));
+	public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_SANDSTONE_SLAB).materialColor(MaterialColor.BROWN));
+	public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = new LeptonStairsBlock(SMOOTH_SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SMOOTH_SANDSTONE_STAIRS).materialColor(MaterialColor.BROWN));
 	
 	@Override
 	public void init() {

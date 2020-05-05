@@ -2,9 +2,9 @@ package com.shnupbups.lepton.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityContext;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.entity.ItemEntity;
@@ -28,7 +28,6 @@ import java.util.Optional;
 
 public class GrateBlock extends Block implements Waterloggable {
 	private static final VoxelShape TRUE_SHAPE = createCuboidShape(0, 15, 0, 16, 16, 16);
-	private static final VoxelShape SPAWN_BLOCK_SHAPE = createCuboidShape(0, 15, 0, 16, 32, 16);
 	private static final VoxelShape SELECTION_SHAPE;
 	private static final Float2ObjectArrayMap<Float2ObjectArrayMap<VoxelShape>> WALK_BLOCK_CACHE = new Float2ObjectArrayMap<>();
 	public static BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
@@ -70,7 +69,7 @@ public class GrateBlock extends Block implements Waterloggable {
 	}
 	
 	@Override
-	public VoxelShape getCollisionShape(BlockState state, BlockView view, BlockPos pos, EntityContext context) {
+	public VoxelShape getCollisionShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
 		Optional<Entity> opt = ((EntityGetter) context).getEntity();
 		if (opt.isPresent()) {
 			Entity entity = opt.get();
@@ -89,23 +88,8 @@ public class GrateBlock extends Block implements Waterloggable {
 	}
 	
 	@Override
-	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, EntityContext context) {
+	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
 		return context.isDescending() ? TRUE_SHAPE : SELECTION_SHAPE;
-	}
-	
-	@Override
-	public boolean canSuffocate(BlockState state, BlockView view, BlockPos pos) {
-		return false;
-	}
-	
-	@Override
-	public boolean hasDynamicBounds() {
-		return true;
-	}
-	
-	@Override
-	public boolean allowsSpawning(BlockState state, BlockView view, BlockPos pos, EntityType<?> type) {
-		return false;
 	}
 	
 	@Override
@@ -122,11 +106,6 @@ public class GrateBlock extends Block implements Waterloggable {
 	@Override
 	public BlockState getPlacementState(ItemPlacementContext context) {
 		return getDefaultState().with(WATERLOGGED, context.getWorld().getFluidState(context.getBlockPos()).getFluid() == Fluids.WATER);
-	}
-	
-	@Override
-	public boolean isSimpleFullBlock(BlockState state, BlockView view, BlockPos pos) {
-		return false;
 	}
 	
 	@Override

@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -20,15 +20,15 @@ public class BiotiteModule extends LeptonModule {
 	
 	public static final Item BIOTITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 	
-	public static final Block BIOTITE_ORE = new BiotiteOreBlock(FabricBlockSettings.copy(Blocks.END_STONE).strength(3.2F, 15F).build());
-	public static final Block BIOTITE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK).materialColor(MaterialColor.BLACK).build());
-	public static final Block BIOTITE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.QUARTZ_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block BIOTITE_STAIRS = new LeptonStairsBlock(BIOTITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(Blocks.QUARTZ_STAIRS).materialColor(MaterialColor.BLACK).build());
-	public static final Block SMOOTH_BIOTITE = new Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).materialColor(MaterialColor.BLACK).build());
-	public static final Block SMOOTH_BIOTITE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ_SLAB).materialColor(MaterialColor.BLACK).build());
-	public static final Block SMOOTH_BIOTITE_STAIRS = new LeptonStairsBlock(SMOOTH_BIOTITE.getDefaultState(), FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ_STAIRS).materialColor(MaterialColor.BLACK).build());
-	public static final Block CHISELED_BIOTITE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.CHISELED_QUARTZ_BLOCK).materialColor(MaterialColor.BLACK).build());
-	public static final Block BIOTITE_PILLAR = new PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).materialColor(MaterialColor.BLACK).build());
+	public static final Block BIOTITE_ORE = new BiotiteOreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(3.2F, 15F));
+	public static final Block BIOTITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK).materialColor(MaterialColor.BLACK));
+	public static final Block BIOTITE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block BIOTITE_STAIRS = new LeptonStairsBlock(BIOTITE_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).materialColor(MaterialColor.BLACK));
+	public static final Block SMOOTH_BIOTITE = new Block(FabricBlockSettings.copyOf(Blocks.SMOOTH_QUARTZ).materialColor(MaterialColor.BLACK));
+	public static final Block SMOOTH_BIOTITE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_QUARTZ_SLAB).materialColor(MaterialColor.BLACK));
+	public static final Block SMOOTH_BIOTITE_STAIRS = new LeptonStairsBlock(SMOOTH_BIOTITE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SMOOTH_QUARTZ_STAIRS).materialColor(MaterialColor.BLACK));
+	public static final Block CHISELED_BIOTITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_QUARTZ_BLOCK).materialColor(MaterialColor.BLACK));
+	public static final Block BIOTITE_PILLAR = new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).materialColor(MaterialColor.BLACK));
 	
 	@Override
 	public void init() {

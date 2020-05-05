@@ -5,15 +5,15 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import net.minecraft.block.EntityShapeContext;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityContextImpl;
 
 import com.shnupbups.lepton.misc.EntityGetter;
 
 import java.util.Optional;
 
-@Mixin(EntityContextImpl.class)
-public class EntityContextImplMixin implements EntityGetter {
+@Mixin(EntityShapeContext.class)
+public class EntityShapeContextMixin implements EntityGetter {
 	private Entity entity = null;
 	
 	@Inject(method = "<init>(Lnet/minecraft/entity/Entity;)V", at = @At("TAIL"))

@@ -3,8 +3,8 @@ package com.shnupbups.lepton.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.entity.EntityContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
@@ -106,7 +106,7 @@ public class RopeBlock extends Block {
 		
 		do {
 			pos = pos.down();
-			if (!World.isValid(pos))
+			if (!World.method_24794(pos))
 				return false;
 			
 			BlockState state = world.getBlockState(pos);
@@ -156,14 +156,14 @@ public class RopeBlock extends Block {
 		Block block = state.getBlock();
 		
 		if(world.getBlockEntity(srcPos) != null || state.getHardness(world, srcPos) == -1 || !state.canPlaceAt(world, dstPos) ||
-				block.isAir(state) || state.getPistonBehavior() != PistonBehavior.NORMAL || block == Blocks.OBSIDIAN)
+				state.isAir() || state.getPistonBehavior() != PistonBehavior.NORMAL || block == Blocks.OBSIDIAN)
 			return;
 			
 		world.setBlockState(srcPos, Blocks.AIR.getDefaultState());
 		world.setBlockState(dstPos, state);
 		
 		world.updateNeighbors(dstPos, state.getBlock());
-		this.updateNeighborStates(state, world, srcPos, 2);
+		//this.updateNeighborStates(state, world, srcPos, 2); TODO: what was this replaced with in 1.16?
 	}
 	
 	@Override
@@ -174,14 +174,14 @@ public class RopeBlock extends Block {
 	@Override
 	public void neighborUpdate(BlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
 		if(!state.canPlaceAt(worldIn, pos)) {
-			worldIn.playLevelEvent(2001, pos, Block.getRawIdFromState(worldIn.getBlockState(pos)));
+			worldIn.syncWorldEvent(2001, pos, Block.getRawIdFromState(worldIn.getBlockState(pos)));
 			dropStacks(state, worldIn, pos);
 			worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
 		}
 	}
 	
 	@Override
-	public VoxelShape getOutlineShape(BlockState state, BlockView worldIn, BlockPos pos, EntityContext context) {
+	public VoxelShape getOutlineShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
 		return SHAPE;
 	}
 }

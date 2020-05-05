@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -13,10 +13,10 @@ import com.shnupbups.lepton.block.LeptonStairsBlock;
 public class DuskboundBlocksModule extends LeptonModule {
 	public static final DuskboundBlocksModule INSTANCE = new DuskboundBlocksModule();
 	
-	public static final Block DUSKBOUND_BLOCK = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK).build());
-	public static final Block DUSKBOUND_STAIRS = new LeptonStairsBlock(DUSKBOUND_BLOCK.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_STAIRS).build());
-	public static final Block DUSKBOUND_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.PURPUR_SLAB).build());
-	public static final Block DUSKBOUND_LANTERN = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK).lightLevel(15).build());
+	public static final Block DUSKBOUND_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK));
+	public static final Block DUSKBOUND_STAIRS = new LeptonStairsBlock(DUSKBOUND_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PURPUR_STAIRS));
+	public static final Block DUSKBOUND_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.PURPUR_SLAB));
+	public static final Block DUSKBOUND_LANTERN = new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK).lightLevel(15));
 	
 	@Override
 	public void init() {

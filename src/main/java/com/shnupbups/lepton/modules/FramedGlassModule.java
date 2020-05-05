@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -15,8 +15,8 @@ import com.shnupbups.lepton.block.LeptonPaneBlock;
 public class FramedGlassModule extends LeptonModule {
 	public static final FramedGlassModule INSTANCE = new FramedGlassModule();
 	
-	public static final Block FRAMED_GLASS = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).build());
-	public static final Block FRAMED_GLASS_PANE = new LeptonPaneBlock(FabricBlockSettings.copy(Blocks.GLASS_PANE).build());
+	public static final Block FRAMED_GLASS = new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS));
+	public static final Block FRAMED_GLASS_PANE = new LeptonPaneBlock(FabricBlockSettings.copyOf(Blocks.GLASS_PANE));
 	
 	@Override
 	public void init() {

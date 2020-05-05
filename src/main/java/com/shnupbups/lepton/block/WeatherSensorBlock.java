@@ -4,8 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.EntityContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -71,18 +71,13 @@ public class WeatherSensorBlock extends Block implements BlockEntityProvider {
 	}
 	
 	@Override
-	public boolean hasBlockEntity() {
-		return true;
-	}
-	
-	@Override
-	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, EntityContext ePos) {
+	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ePos) {
 		return SHAPE;
 	}
 	
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-		if (player.canModifyWorld()) {
+		if (player.canModifyBlocks()) {
 			if (!world.isClient) {
 				BlockState blockState = state.cycle(INVERTED);
 				world.setBlockState(pos, blockState, 4);
@@ -92,10 +87,5 @@ public class WeatherSensorBlock extends Block implements BlockEntityProvider {
 		} else {
 			return super.onUse(state, world, pos, player, hand, hit);
 		}
-	}
-	
-	@Override
-	public BlockRenderType getRenderType(BlockState state) {
-		return BlockRenderType.MODEL;
 	}
 }

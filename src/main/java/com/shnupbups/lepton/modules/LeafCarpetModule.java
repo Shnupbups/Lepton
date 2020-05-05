@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -14,12 +14,12 @@ import com.shnupbups.lepton.block.LeptonCarpetBlock;
 public class LeafCarpetModule extends LeptonModule {
 	public static final LeafCarpetModule INSTANCE = new LeafCarpetModule();
 	
-	public static final Block OAK_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).build());
-	public static final Block SPRUCE_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.SPRUCE_LEAVES).build());
-	public static final Block BIRCH_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.BIRCH_LEAVES).build());
-	public static final Block JUNGLE_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES).build());
-	public static final Block ACACIA_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.ACACIA_LEAVES).build());
-	public static final Block DARK_OAK_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copy(Blocks.DARK_OAK_LEAVES).build());
+	public static final Block OAK_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
+	public static final Block SPRUCE_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_LEAVES));
+	public static final Block BIRCH_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LEAVES));
+	public static final Block JUNGLE_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES));
+	public static final Block ACACIA_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_LEAVES));
+	public static final Block DARK_OAK_LEAF_CARPET = new LeptonCarpetBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES));
 	
 	@Override
 	public void init() {

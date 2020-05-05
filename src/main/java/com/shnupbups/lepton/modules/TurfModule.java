@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -13,9 +13,9 @@ import com.shnupbups.lepton.block.LeptonStairsBlock;
 public class TurfModule extends LeptonModule {
 	public static final TurfModule INSTANCE = new TurfModule();
 	
-	public static final Block TURF = new Block(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).build());
-	public static final Block TURF_STAIRS = new LeptonStairsBlock(TURF.getDefaultState(), FabricBlockSettings.copy(Blocks.GRASS_BLOCK).build());
-	public static final Block TURF_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).build());
+	public static final Block TURF = new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK));
+	public static final Block TURF_STAIRS = new LeptonStairsBlock(TURF.getDefaultState(), FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK));
+	public static final Block TURF_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK));
 	
 	@Override
 	public void init() {

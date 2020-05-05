@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -15,25 +15,25 @@ import com.shnupbups.lepton.LeptonModule;
 
 public class CompressedBlocksModule extends LeptonModule {
 	public static final CompressedBlocksModule INSTANCE = new CompressedBlocksModule();
-	public static final Block CHARCOAL_BLOCK = new Block(FabricBlockSettings.copy(Blocks.COAL_BLOCK).build());
-	public static final Block BLAZE_LANTERN = new Block(FabricBlockSettings.copy(Blocks.SEA_LANTERN).materialColor(DyeColor.YELLOW).build());
+	public static final Block CHARCOAL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK));
+	public static final Block BLAZE_LANTERN = new Block(FabricBlockSettings.copyOf(Blocks.SEA_LANTERN).materialColor(DyeColor.YELLOW));
 	private static final FabricBlockSettings PILLAR_SETTINGS = FabricBlockSettings.of(Material.WOOD).strength(0.5f, 0.5f).sounds(BlockSoundGroup.WOOD);
-	public static final Block SUGAR_CANE_BUNDLE = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.LIME).build());
-	public static final Block BAMBOO_BUNDLE = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.YELLOW).build());
-	public static final Block CACTUS_BATCH = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.GREEN).build());
-	public static final Block CHORUS_FRUIT_BATCH = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.PURPLE).build());
-	public static final Block STICK_STACK = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.WOOD).build());
+	public static final Block SUGAR_CANE_BUNDLE = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.LIME));
+	public static final Block BAMBOO_BUNDLE = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.YELLOW));
+	public static final Block CACTUS_BATCH = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.GREEN));
+	public static final Block CHORUS_FRUIT_BATCH = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.PURPLE));
+	public static final Block STICK_STACK = new PillarBlock(PILLAR_SETTINGS.materialColor(MaterialColor.WOOD));
 	private static final FabricBlockSettings CRATE_SETTINGS = FabricBlockSettings.of(Material.WOOD).strength(1.5f, 1.5f).sounds(BlockSoundGroup.WOOD);
-	public static final Block GOLDEN_APPLE_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.GOLD).build());
-	public static final Block APPLE_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.RED).build());
-	public static final Block POTATO_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.ORANGE).build());
-	public static final Block CARROT_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.ORANGE_TERRACOTTA).build());
-	public static final Block BEETROOT_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.RED).build());
+	public static final Block GOLDEN_APPLE_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.GOLD));
+	public static final Block APPLE_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.RED));
+	public static final Block POTATO_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.ORANGE));
+	public static final Block CARROT_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.ORANGE_TERRACOTTA));
+	public static final Block BEETROOT_CRATE = new Block(CRATE_SETTINGS.materialColor(MaterialColor.RED));
 	private static final FabricBlockSettings SACK_SETTINGS = FabricBlockSettings.of(Material.WOOL).strength(0.5f, 0.5f).sounds(BlockSoundGroup.WOOL);
-	public static final Block COCOA_BEAN_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.BROWN).build());
-	public static final Block NETHER_WART_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.RED).build());
-	public static final Block GUNPOWDER_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.GRAY).build());
-	public static final Block SWEET_BERRY_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.RED).build());
+	public static final Block COCOA_BEAN_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.BROWN));
+	public static final Block NETHER_WART_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.RED));
+	public static final Block GUNPOWDER_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.GRAY));
+	public static final Block SWEET_BERRY_SACK = new Block(SACK_SETTINGS.materialColor(MaterialColor.RED));
 	
 	@Override
 	public void init() {

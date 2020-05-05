@@ -1,6 +1,6 @@
 package com.shnupbups.lepton.modules;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -14,9 +14,9 @@ import com.shnupbups.lepton.block.ThatchBlock;
 public class ThatchModule extends LeptonModule {
 	public static final ThatchModule INSTANCE = new ThatchModule();
 	
-	public static final Block THATCH = new ThatchBlock(FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
-	public static final Block THATCH_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
-	public static final Block THATCH_STAIRS = new LeptonStairsBlock(THATCH.getDefaultState(), FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
+	public static final Block THATCH = new ThatchBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK));
+	public static final Block THATCH_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK));
+	public static final Block THATCH_STAIRS = new LeptonStairsBlock(THATCH.getDefaultState(), FabricBlockSettings.copyOf(Blocks.HAY_BLOCK));
 	
 	@Override
 	public void init() {
